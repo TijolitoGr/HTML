@@ -1,0 +1,18 @@
+h1 {
+  color: rgb(70, 45, 214);
+  font-size: 54px;
+  font-family: "Trebuchet MS", "Arial";
+}
+
+h2 {
+  color:rgb(79, 63, 166);
+  font-size: 48px;
+  font-family: "Trebuchet MS", "Arial";
+}
+
+#para1, .center {
+    font-size: 28px;
+    font-family: "Trebuchet MS", "Arial";
+    text-align: center;
+    color:dodgerblue;
+}
