@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>CSS Website Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /*O padding e o border dos elementos conta para o seu width e height total*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* Estilo do header */
+    .hero {
+      background-color: #f1f1f1;
+      padding: 100px;
+      text-align: center;
+    }
+
+    /* Estilo da barra top navigation */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Estilo das hiperligacoes topnav */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Muda a cor quando hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Criar três colunas de tamanhos diferentes alinhadas seguidas*/
+    .column {
+      float: left;
+      padding: 50px;
+    }
+
+    /* As colunas da esquerda e da direita com o mesmo tamanho */
+    .column.side {
+      width: 25%;
+    }
+
+    /* A coluna do meio */
+    .column.middle {
+      width: 50%;
+    }
+
+    /* Estilo do footer */
+    .footer {
+      background-color: #f1f1f1;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Limpa alinhamentos depois das colunas*/
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive - As três colunas aparecem empilhadas em vez de lateralmente em ecrans pequenos (600px ou menos) */
+    @media (max-width: 600px) {
+      .column {
+        padding: 10px;
+      }
+
+      .column.side,
+      .column.middle {
+        width: 100%;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+    <h1>Header</h1>
+    <p>Redimensione a janela do browser para ver o efeito responsivo.</p>
+  </div>
+
+  <div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+  </div>
+
+  <div class="row">
+    <div class="column side">
+      <h2>Side</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    </div>
+    <div class="column middle">
+      <h2>Main Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis
+        velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus
+        leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <p>Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Sed vulputate mi sit amet. Nascetur ridiculus mus
+        mauris vitae ultricies leo.
+        Posuere sollicitudin aliquam ultrices sagittis orci. Risus nec feugiat in fermentum posuere. Sed risus pretium
+        quam vulputate dignissim suspendisse in est ante.
+        Odio ut enim blandit volutpat maecenas volutpat blandit. Non consectetur a erat nam at. Semper auctor neque
+        vitae tempus quam pellentesque nec.
+        Sagittis vitae et leo duis. Suspendisse ultrices gravida dictum fusce. Faucibus et molestie ac feugiat sed
+        lectus vestibulum.
+        Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Eget duis at tellus at.</p>
+      <p>Dignissim sodales ut eu sem integer vitae justo eget magna. Malesuada nunc vel risus commodo viverra maecenas
+        accumsan. Arcu ac tortor dignissim convallis.
+        Eget aliquet nibh praesent tristique magna sit amet purus. Quam id leo in vitae turpis massa. Nisi porta lorem
+        mollis aliquam ut porttitor leo.
+        Donec et odio pellentesque diam. Egestas purus viverra accumsan in. Quis eleifend quam adipiscing vitae proin
+        sagittis nisl rhoncus.</p>
+    </div>
+    <div class="column side">
+      <h2>Side</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+</body>
+
+</html>

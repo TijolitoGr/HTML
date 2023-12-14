@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Website Layout CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Cria 4 colunas iguais alinhadas/empilhadas(float) pela esquerda */
+        .coluna {
+            float: left;
+            width: 25%;
+            /* 33.33% três colunas, 50% duas colunas*/
+        }
+
+
+        /* Responsive - As quatro colunas aparecem empilhadas duas a duas em vez de lateralmente em ecrans pequenos (1000px ou menos) */
+        @media (max-width: 1000px) {
+            .coluna {
+                width: 50%;
+                /*Cada coluna ocupa 50%*/
+            }
+        }
+
+        /* Responsive - As quatro colunas aparecem empilhadas uma a uma em vez de lateralmente em ecrans inferiores a 600px */
+        @media (max-width: 600px) {
+            .coluna {
+                width: 100%;
+                /*Cada coluna ocupa 100% */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="coluna">
+        <h2>Cabeçalho 1</h2>
+        <h5>Descrição do titulo, Jan 17, 2022</h5>
+        <p>Algum texto..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco.</p>
+    </div>
+
+    <div class="coluna">
+        <h2>Cabeçalho 2</h2>
+        <h5>Descrição do titulo, Jan 17, 2022</h5>
+        <p>Algum texto..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco.</p>
+    </div>
+
+    <div class="coluna">
+        <h2>Cabeçalho 3</h2>
+        <h5>Descrição do titulo, Jan 17, 2022</h5>
+        <p>Algum texto..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco.</p>
+    </div>
+
+    <div class="coluna">
+        <h2>Cabeçalho 4</h2>
+        <h5>Descrição do titulo, Jan 17, 2022</h5>
+        <p>Algum texto..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco.</p>
+    </div>
+
+
+</body>
+
+</html>
