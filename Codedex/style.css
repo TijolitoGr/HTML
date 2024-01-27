@@ -1,0 +1,43 @@
+span {
+  text-decoration: underline;
+}
+
+#red-word {
+  color: red;
+}
+
+#blue-word {
+  color: blue;
+}
+
+body {
+  width: 85%;
+  margin: auto;
+}
+
+h1 {
+  text-align: left;
+}
+
+img {
+  border: 3px solid blue;
+}
+
+#top-8-wrapper {
+  text-align: center;
+}
+
+.friend-card {
+  display: inline-block;
+  margin: 1px;
+  text-align: center;
+}
+
+.friend-name {
+  color: blue;
+}
+
+.coco {
+    color: black;
+    font-size: 200px;
+}
