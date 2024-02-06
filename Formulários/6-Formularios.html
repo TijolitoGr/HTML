@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Forms</title>
+</head>
+<body>
+<h1>Elementos dos formularios:</h1>
+<form method="post">
+
+<h4>TEXTAREA:</h4>
+<textarea NAME="nome" ROWS=4 COLS=40>
+Texto inicial...
+</textarea>
+
+<h4>SELECT:</h4>
+<select NAME="lista">
+<OPTION VALUE="item1">Item1</option>
+<OPTION VALUE="item2" SELECTED>Item2</option>
+<OPTION VALUE="item3">Item3</option>
+</select>
+
+<h4>SELECT MULTIPLE:</h4>
+<select multiple NAME="lista2">
+<OPTION VALUE="item1">Item1</option>
+<OPTION VALUE="item2" SELECTED>Item2</option>
+<OPTION VALUE="item3">Item3</option>
+</select>
+
+<h4>INPUT TYPE="TEXT":</h4>
+Apelido:
+<INPUT TYPE="text" NAME="apelido" SIZE="20" MAXLENGTH="30">
+
+<h4>INPUT TYPE="HIDDEN":</h4>
+Escondido:
+<INPUT TYPE="hidden" NAME="escondido" VALUE="30">
+
+<h4>INPUT TYPE="PASSWORD":</h4>
+Password:
+<INPUT TYPE="password" NAME="pword" SIZE="20" MAXLENGTH="8">
+
+<h4>INPUT TYPE="CHECKBOX":</h4>
+Caixas de escolha:
+<INPUT TYPE="checkbox" NAME="campo1" VALUE="Caixa1">Caixa1
+<INPUT TYPE="checkbox" NAME="campo2" VALUE="Caixa2">Caixa2
+<INPUT TYPE="checkbox" NAME="campo3" VALUE="Caixa3" Checked>Caixa3
+
+<h4>INPUT TYPE="RADIO":</h4>
+Canal escolhido:
+<INPUT TYPE="radio" NAME="tv" VALUE="rtp">RTP
+<INPUT TYPE="radio" NAME="tv" VALUE="sic">SIC
+<INPUT TYPE="radio" NAME="tv" VALUE="tvi" Checked>TVI
+
+<h4>INPUT TYPE="RESET":</h4>
+Limpar formulario:
+<INPUT TYPE="reset" VALUE="LIMPAR">
+
+<h4>INPUT TYPE="SUBMIT":</h4>
+Submete formulario:
+<INPUT TYPE="submit" VALUE="Enviar">
+
+<h4>INPUT TYPE="BUTTON":</h4>
+Botao generico:
+<INPUT TYPE="button" VALUE="Calcular...">
+
+</form>
+
+</body>
+</html>
